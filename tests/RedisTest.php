@@ -14,7 +14,7 @@ class RedisTest extends RedisConnTest {
 		$config = json_decode(
 			file_get_contents(getcwd() . '/zapstore-redis-test.config.json'),
 			true);
-		$sql = new zs\Redis($config['predis'], $logger);
+		$sql = new zs\RedisConn($config['redis'], $logger);
 		$this->assertEquals(
 			$sql->get_connection_params()['redistype'], 'redis');
 	}
