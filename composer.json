@@ -1,7 +1,7 @@
 {
   "name": "bfitech/zapstore-redis",
   "description": "Redis support for zapstore.",
-  "type": "metapackage",
+  "type": "library",
   "license": "MIT",
   "authors": [
     {
